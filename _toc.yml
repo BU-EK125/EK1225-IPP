@@ -1,0 +1,13 @@
+format: jb-book
+root: intro
+chapters:
+  - url: https://bu-ek125.github.io/EK1225-IPP/Class1_IPP/index.html
+    title: "Class 1: Individual Practice Problems"
+  - url: https://bu-ek125.github.io/EK1225-IPP/Class2_IPP/index.html
+    title: "Class 2: Individual Practice Problems"
+  - url: https://bu-ek125.github.io/EK1225-IPP/Class3_IPP/index.html
+    title: "Class 3: Individual Practice Problems"
+  - url: https://bu-ek125.github.io/EK1225-IPP/Class4_IPP/index.html
+    title: "Class 4: Individual Practice Problems"
+  - url: https://bu-ek125.github.io/EK1225-IPP/Class6_IPP/index.html
+    title: "Class 6: Individual Practice Problems"
