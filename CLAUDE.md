@@ -69,4 +69,5 @@ matching source.
 
 See `EK125`'s own `CLAUDE.md` for the full repo map, the Act 1/2/3 course
 structure, and the PII-stripping rule for anything sourced from
-EK125-notebooks or EK125WIP.
+EK125-notebooks or EK125-Instructors (the private raw-material repo,
+transferred from a personal repo formerly called "EK125WIP").
