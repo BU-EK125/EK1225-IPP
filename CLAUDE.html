@@ -1,0 +1,527 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Cross-repo context for EK1225-IPP &#8212; EK1225 Individual Practice Problems</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'CLAUDE';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">EK1225 Individual Practice Problems</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    EK1225 Individual Practice Problems
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://bu-ek125.github.io/EK1225-IPP/Class1_IPP/index.html">Class 1: Individual Practice Problems</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://bu-ek125.github.io/EK1225-IPP/Class2_IPP/index.html">Class 2: Individual Practice Problems</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://bu-ek125.github.io/EK1225-IPP/Class3_IPP/index.html">Class 3: Individual Practice Problems</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://bu-ek125.github.io/EK1225-IPP/Class4_IPP/index.html">Class 4: Individual Practice Problems</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://bu-ek125.github.io/EK1225-IPP/Class6_IPP/index.html">Class 6: Individual Practice Problems</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/CLAUDE.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Cross-repo context for EK1225-IPP</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-this-repo-is-and-its-name">What this repo is, and its name</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-content-policy-distinction-this-repo-established">The content-policy distinction this repo established</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gotcha-when-cloning-this-repo-s-pattern-elsewhere">Gotcha when cloning this repo’s pattern elsewhere</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#toolchain-notes">Toolchain notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relation-to-ek125-notebooks-own-ipp-folder">Relation to EK125-notebooks’ own <code class="docutils literal notranslate"><span class="pre">/ipp/</span></code> folder</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-wider-ecosystem">The wider ecosystem</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="cross-repo-context-for-ek1225-ipp">
+<h1>Cross-repo context for EK1225-IPP<a class="headerlink" href="#cross-repo-context-for-ek1225-ipp" title="Link to this heading">#</a></h1>
+<p>This file exists to carry over knowledge from work done across the wider
+EK125 repo ecosystem that isn’t written down in this repo’s own <a class="reference external" href="http://README.md">README.md</a>
+(which is authoritative for this repo’s own build mechanics – read that
+first, don’t duplicate it here).</p>
+<section id="what-this-repo-is-and-its-name">
+<h2>What this repo is, and its name<a class="headerlink" href="#what-this-repo-is-and-its-name" title="Link to this heading">#</a></h2>
+<p>A public, permanent home for EK125’s per-class Individual Practice Problem
+(IPP) handouts, published as marimo slide decks – built by cloning
+EK125-C1-DePasquale-Slides’ pattern almost verbatim (same jupyter-book
+shell, same <code class="docutils literal notranslate"><span class="pre">build_slides.sh</span></code>/<code class="docutils literal notranslate"><span class="pre">colab_button.html</span></code>/<code class="docutils literal notranslate"><span class="pre">strip_marimo_import.py</span></code>
+pipeline). One deck per class, sourced from that class’s original PDF
+handout (kept for reference in <code class="docutils literal notranslate"><span class="pre">docs/</span></code>).</p>
+<p><strong>The repo/org name is literally <code class="docutils literal notranslate"><span class="pre">EK1225-IPP</span></code></strong> (with a typo – “1225” not
+“125” – inherited from a local folder name), not <code class="docutils literal notranslate"><span class="pre">EK125-IPP</span></code>. This is now
+permanent and live at that URL; don’t “fix” the name without the
+instructor’s explicit go-ahead, and be careful when typing it out.</p>
+</section>
+<section id="the-content-policy-distinction-this-repo-established">
+<h2>The content-policy distinction this repo established<a class="headerlink" href="#the-content-policy-distinction-this-repo-established" title="Link to this heading">#</a></h2>
+<p>IPP decks show <strong>questions only, no answer reveal</strong> – unlike GPP decks
+(in EK125-C1-DePasquale-Slides), which may use a reveal-on-click fragment
+for their quick-checks. This was a deliberate choice (confirmed even after
+verifying the correct answers by running the code and having a reveal
+option available): IPPs are individual assessments, kept as blank practice
+worksheets. Preserve this distinction in any future IPP-related work.</p>
+<p>This is also the model for how sensitive-but-instructor-wants-it-public
+content gets handled ecosystem-wide: rather than adding it to the main
+EK125 site (which is policy-locked to no-IPPs/no-solutions except two
+narrow Fall-2026 exceptions – see EK125’s own <a class="reference external" href="http://CLAUDE.md">CLAUDE.md</a>), it gets its own
+dedicated single-purpose public repo, following this repo’s and
+EK125-C1-DePasquale-Slides’ precedent.</p>
+</section>
+<section id="gotcha-when-cloning-this-repo-s-pattern-elsewhere">
+<h2>Gotcha when cloning this repo’s pattern elsewhere<a class="headerlink" href="#gotcha-when-cloning-this-repo-s-pattern-elsewhere" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">colab_button.html</span></code> has the <strong>source repo’s org/name hardcoded</strong> (e.g. a
+link to <code class="docutils literal notranslate"><span class="pre">github.com/BU-EK125/EK125-C1-DePasquale-Slides/blob/main/</span> <span class="pre">notebooks/...</span></code>) and must be manually find-and-replaced if this pattern is
+copied to yet another new repo. <code class="docutils literal notranslate"><span class="pre">build_slides.sh</span></code> and
+<code class="docutils literal notranslate"><span class="pre">strip_marimo_import.py</span></code> were checked and have no hardcoded repo
+references.</p>
+</section>
+<section id="toolchain-notes">
+<h2>Toolchain notes<a class="headerlink" href="#toolchain-notes" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>pip-installed console scripts (<code class="docutils literal notranslate"><span class="pre">marimo</span></code>, <code class="docutils literal notranslate"><span class="pre">jb</span></code>) can end up off <code class="docutils literal notranslate"><span class="pre">PATH</span></code>
+(installed under <code class="docutils literal notranslate"><span class="pre">/Library/Frameworks/Python.framework/.../bin</span></code>) – not
+a code bug, just check your shell’s PATH if a command “isn’t found.”</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">marimo</span> <span class="pre">check</span></code> reliably emits <code class="docutils literal notranslate"><span class="pre">markdown-indentation</span></code> warnings on fenced
+code-block cells in this deck pattern – expected/accepted noise (the
+reference repo’s existing decks produce the same warning), not a real
+issue to chase.</p></li>
+<li><p>GitHub Pages deploy config here uses the legacy build type, serving from
+the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch at <code class="docutils literal notranslate"><span class="pre">path:</span> <span class="pre">/</span></code>.</p></li>
+</ul>
+</section>
+<section id="relation-to-ek125-notebooks-own-ipp-folder">
+<h2>Relation to EK125-notebooks’ own <code class="docutils literal notranslate"><span class="pre">/ipp/</span></code> folder<a class="headerlink" href="#relation-to-ek125-notebooks-own-ipp-folder" title="Link to this heading">#</a></h2>
+<p>EK125-notebooks (private) has its own gitignored <code class="docutils literal notranslate"><span class="pre">/ipp/</span></code> folder with real
+IPP content (e.g. <code class="docutils literal notranslate"><span class="pre">Class</span> <span class="pre">5</span> <span class="pre">IPP</span> <span class="pre">SOLUTION.docx</span></code>) – a <strong>different
+provenance</strong> from this repo’s PDF-sourced decks. Don’t assume the two
+overlap 1:1; if extending this repo to a new class, check whether a PDF
+handout exists first rather than assuming EK125-notebooks’ <code class="docutils literal notranslate"><span class="pre">/ipp/</span></code> has the
+matching source.</p>
+</section>
+<section id="the-wider-ecosystem">
+<h2>The wider ecosystem<a class="headerlink" href="#the-wider-ecosystem" title="Link to this heading">#</a></h2>
+<p>See <code class="docutils literal notranslate"><span class="pre">EK125</span></code>’s own <code class="docutils literal notranslate"><span class="pre">CLAUDE.md</span></code> for the full repo map, the Act 1/2/3 course
+structure, and the PII-stripping rule for anything sourced from
+EK125-notebooks or EK125-Instructors (the private raw-material repo,
+transferred from a personal repo formerly called “EK125WIP”).</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-this-repo-is-and-its-name">What this repo is, and its name</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-content-policy-distinction-this-repo-established">The content-policy distinction this repo established</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gotcha-when-cloning-this-repo-s-pattern-elsewhere">Gotcha when cloning this repo’s pattern elsewhere</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#toolchain-notes">Toolchain notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relation-to-ek125-notebooks-own-ipp-folder">Relation to EK125-notebooks’ own <code class="docutils literal notranslate"><span class="pre">/ipp/</span></code> folder</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-wider-ecosystem">The wider ecosystem</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Brian DePasquale
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026 Brian DePasquale.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
